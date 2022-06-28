@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "Front_End_Playground"
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+}
+
+
+body {
+    color: #5f6c7b;
+    font-family: 'Roboto', serif;
+    background: linear-gradient(270deg, #b2dfff, #3da9fc);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+h1,h2,h3{
+    color: #094067;
+}
+
+a {
+    color: #3da9fc;
+}

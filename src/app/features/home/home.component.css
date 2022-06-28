@@ -1,0 +1,47 @@
+.my-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.fa-solid {
+    font-size: 5em;
+    text-shadow:0px 0px 4px rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+p {
+    font-size: 1em;
+    margin: 0.5em;
+    color: white;
+    width: auto;
+    text-shadow: 
+    -1px -1px 4px rgba(0, 0, 0, 0.75),
+    1px -1px 4px rgba(0, 0, 0, 0.75),
+    -1px 1px 4px rgba(0, 0, 0, 0.75),
+    1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+
+.folder-button {
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+}
+
+.folder-card-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backdrop-filter: brightness(50%);
+    z-index: 10;
+}
+
+.folder-card {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 90;
+}
+
