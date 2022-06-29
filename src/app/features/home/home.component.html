@@ -1,48 +1,112 @@
-<div class="my-container d-flex justify-content-center align-items-center" *ngIf="showFolder">
-    <div (click)="showFolder = !showFolder"
+<div class="my-container d-flex justify-content-center align-items-center" *ngIf="showFolderPlayground">
+    <div (click)="showFolderPlayground = !showFolderPlayground"
         class="folder-card-background d-flex justify-content-center align-items-center"></div>
-    <div [@openFolder] class="folder-card d-flex flex-column justify-content-center align-items-center p-5">
-        <div class="row">
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
-            </div>
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
-            </div>
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
-            </div>
+    <div [@openFolder] class="folder-card d-flex flex-column justify-content-center align-items-center ">
+        <div class="folder-bar">
+            <div class="folder-text">Playground</div>
+            <button (click)="showFolderPlayground = !showFolderPlayground" class="circle-button red m-1"></button>
         </div>
-        <div class="row">
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
+        <div class="p-5">
+            <div class="row">
+                <div class="col">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="calculator">
+                        <i class="fa-solid fa-calculator"></i>
+                        <p class="m-0 mt-3">Calculator</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="colorChanger">
+                        <i class="fa-solid fa-palette"></i>
+                        <p class="m-0 mt-3">Color changer</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="digitalClock">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-0 mt-3">Digital clock</p>
+                    </a>
+                </div>
             </div>
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
-            </div>
-            <div [@openFolderIcons] class="col m-4">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Socials</p>
+            <div class="row">
+                <div class="col">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="randomQuotes">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="m-0 mt-3">Random quotes</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="weather">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <p class="m-0 mt-3">Weather</p>
+                    </a>
+                </div>
+                <div class="col ">
+                    <a class="d-flex flex-column justify-content-center align-items-center m-4" href="wordCounter" >
+                        <i class="fa-solid fa-keyboard"></i>
+                        <p class="m-0 mt-3">Word counter</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
+
+
+<div class="my-container d-flex justify-content-center align-items-center" *ngIf="showFolderSocials">
+    <div (click)="showFolderSocials = !showFolderSocials"
+        class="folder-card-background d-flex justify-content-center align-items-center"></div>
+    <div [@openFolder] class="folder-card d-flex flex-column justify-content-center align-items-center">
+        <div class="folder-bar">
+            <div class="folder-text">Playground</div>
+            <button (click)="showFolderSocials = !showFolderSocials" class="circle-button red m-1"></button>
+        </div>
+        <div class="p-5">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <p class="m-0 mt-3">Instagram</p>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p class="m-0 mt-3">Linkedin</p>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-spotify"></i>
+                    <p class="m-0 mt-3">Spotify</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-steam"></i>
+                    <p class="m-0 mt-3">Steam</p>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-github"></i>
+                    <p class="m-0 mt-3">Github</p>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center m-4">
+                    <i class="fa-brands fa-behance-square"></i>
+                    <p class="m-0 mt-3">Behance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div class="p-0 d-flex flex-column align-items-end">
-    <div cdkDrag (dblclick)="showFolder = !showFolder" class="p-5 d-flex flex-column align-items-center folder-button">
+    <div cdkDrag (dblclick)="showInfo = !showInfo" class="p-5 d-flex flex-column align-items-center folder-button">
         <i class="fa-solid fa-file"></i>
         <p>Info.txt</p>
     </div>
-    <div cdkDrag (dblclick)="showFolder = !showFolder" class="p-5 d-flex flex-column align-items-center folder-button">
+    <div cdkDrag (dblclick)="showFolderPlayground = !showFolderPlayground"
+        class="p-5 d-flex flex-column align-items-center folder-button">
         <i class="fa-solid fa-folder-open"></i>
         <p>Playground</p>
     </div>
-    <div cdkDrag (dblclick)="showFolder = !showFolder" class="p-5 d-flex flex-column align-items-center folder-button">
+    <div cdkDrag (dblclick)="showFolderSocials = !showFolderSocials"
+        class="p-5 d-flex flex-column align-items-center folder-button">
         <i class="fa-solid fa-folder-open"></i>
         <p>Socials</p>
     </div>

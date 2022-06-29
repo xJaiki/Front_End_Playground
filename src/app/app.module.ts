@@ -26,7 +26,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     WeatherPageComponent,
     HomeComponent,
     InfoComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,17 +13,17 @@ import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
         transition(
           ':enter',
           [
-            style({ height: 0, width: 0, opacity: 0 }),
+            style({ opacity: 0 }),
             animate('0.2s ease-out', 
-              style({ height: 'auto', width: 'auto',opacity: 1 }))
+              style({ opacity: 1 }))
           ]
         ),
         transition(
           ':leave',
           [
-            style({ height: 'auto', width: 'auto',opacity: 1 }),
+            style({ opacity: 1 }),
             animate('0.2s ease-in',
-              style({ height: 0, width: 0, opacity: 0 }))
+              style({opacity: 0 }))
           ]
         )
       ]
@@ -75,8 +75,9 @@ import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  showFolder = false;
-
+  showFolderPlayground = false;
+  showFolderSocials = false;
+  showInfo = false;
 
   constructor() { }
 
