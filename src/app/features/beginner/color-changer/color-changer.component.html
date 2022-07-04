@@ -1,1 +1,8 @@
-<p>color-changer works!</p>
+<div class="background d-flex flex-column justify-content-center align-items-center">
+    <h1>Click the squares to change background color</h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <input class="m-5 colorPicker" type="color" [(ngModel)]="data.color2" (ngModelChange)="setColor2($event)">
+        <input class="m-5 colorPicker" type="color" [(ngModel)]="data.color" (ngModelChange)="setColor1($event)">
+    </div>
+
+</div>

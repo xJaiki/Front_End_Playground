@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AppData } from '../../../AppData';
 
 @Component({
   selector: 'app-color-changer',
@@ -11,5 +12,21 @@ export class ColorChangerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  data = new AppData('#b2dfff', '#3da9fc');
 
+  setColor1(newColor: any) {
+    document.documentElement.style.setProperty('--color1', newColor)
+  }
+  setColor2(newColor: any) {
+    document.documentElement.style.setProperty('--color2', newColor)
+  }
+
+
+
+/*
+  @ViewChild("background") background!: ElementRef;
+  changeColor(){
+    console.log(color)
+  }
+*/
 }
